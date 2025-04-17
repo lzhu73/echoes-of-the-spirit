@@ -1,0 +1,155 @@
+{
+  "Title": "Echoes of the Spirit",
+  "Credits": "Created by Liya Zhu.",
+  "InitialLocation": "Cliffside Ruin",
+  "Locations": {
+    "Cliffside Ruin": {
+      "Body": "You awaken at the edge of a shattered cliff, the sky cracked like glass above you.",
+      "Choices": [
+        {
+          "Text": "Enter the Abandoned Library",
+          "Target": "Abandoned Library"
+        },
+        {
+          "Text": "Explore the Broken Shrine",
+          "Target": "Broken Shrine"
+        },
+        {
+          "Text": "Climb down the rocks",
+          "Target": "Floating Marketplace"
+        }
+      ]
+    },
+    "Abandoned Library": {
+      "Body": "Dusty tomes whisper secrets of forgotten cultivation techniques.",
+      "Choices": [
+        {
+          "Text": "Return to the cliff",
+          "Target": "Cliffside Ruin"
+        },
+        {
+          "Text": "Search the Withered Garden",
+          "Target": "Withered Garden"
+        }
+      ]
+    },
+    "Broken Shrine": {
+      "Body": "The Spirit Mirror flickers as you draw near. It reacts to something you carry...",
+      "Scene": "SpiritMirror",
+      "Choices": [
+        {
+          "Text": "Touch the mirror",
+          "Target": "Mirror Realm"
+        },
+        {
+          "Text": "Return to the cliff",
+          "Target": "Cliffside Ruin"
+        }
+      ]
+    },
+    "Withered Garden": {
+      "Body": "Among wilted leaves, a glowing seed pulses softly. A World Shard Seed.",
+      "Item": "World Shard Seed",
+      "Choices": [
+        {
+          "Text": "Step forward",
+          "Target": "Sealed Gate"
+        }
+      ]
+    },
+    "Sealed Gate": {
+      "Body": "The gate hums with ancient energy. You feel the World Shard Seed resonate.",
+      "Choices": [
+        {
+          "Text": "Place the World Shard Seed in the pedestal",
+          "Target": "Floating Marketplace",
+          "Requires": "World Shard Seed",
+          "Consumes": true
+        },
+        {
+          "Text": "Try to force the gate open (It won't budge)",
+          "Target": "Sealed Gate"
+        }
+      ]
+    },
+    "Floating Marketplace": {
+      "Body": "Vendors trade relics of a broken world. Some offer help, some deceit.",
+      "Choices": [
+        {
+          "Text": "Venture into the Mirror Realm",
+          "Target": "Mirror Realm"
+        },
+        {
+          "Text": "Approach the Altar of Transmutation",
+          "Target": "Altar of Transmutation"
+        },
+        {
+          "Text": "Enter the Riddle Gate",
+          "Target": "Riddle Gate"
+        },
+        {
+          "Text": "Return to Cliffside Ruin",
+          "Target": "Cliffside Ruin"
+        }
+      ]
+    },
+    "Altar of Transmutation": {
+      "Body": "A marble platform glows with ethereal energy. Something powerful sleeps here.",
+      "Scene": "TransformationAltar",
+      "Choices": [
+        {
+          "Text": "Return to the Floating Marketplace",
+          "Target": "Floating Marketplace"
+        }
+      ]
+    },
+    "Riddle Gate": {
+      "Body": "A stone archway blocks your path. An inscription above reads: 'Answer true, and step through.'",
+      "Scene": "RiddleGate",
+      "Choices": []
+    },
+    "Mirror Realm": {
+      "Body": "Your reflection walks away from you, revealing truths you'd rather forget.",
+      "Choices": [
+        {
+          "Text": "Ascend to the Frosted Peak",
+          "Target": "Frosted Peak"
+        },
+        {
+          "Text": "Follow a whisper into the Fantasy Grove",
+          "Target": "Fantasy Grove",
+          "Requires": "Celestial Core"
+        },
+        {
+          "Text": "Step back through the reflection",
+          "Target": "Broken Shrine"
+        }
+      ]
+    },
+    "Fantasy Grove": {
+      "Body": "You find yourself in a glowing forest of stars. Time stands still here.",
+      "Choices": [
+        {
+          "Text": "Ascend directly to the Soulforge Nexus",
+          "Target": "Soulforge Nexus"
+        },
+        {
+          "Text": "Return to the Mirror Realm",
+          "Target": "Mirror Realm"
+        }
+      ]
+    },
+    "Frosted Peak": {
+      "Body": "The cold stings like regret. Your master's final lesson echoes here.",
+      "Choices": [
+        {
+          "Text": "Enter the Soulforge Nexus",
+          "Target": "Soulforge Nexus"
+        }
+      ]
+    },
+    "Soulforge Nexus": {
+      "Body": "This is the end -- or a new beginning..."
+    }
+  }
+}
